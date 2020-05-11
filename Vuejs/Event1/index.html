@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myapp">
+        <h3> Counter : {{counter}} </h3>
+        <button type="button" v-on:click="increment(1)">increment</button>
+        <button type="button" v-on:click="decrement(1)">Decrement</button>
+    </div>
+    <div id="myapp1">
+        <input type="text" @keyup.alt.enter="keyupevent" >
+    </div> <br><br>
+
+    <div id="myapp2">
+        <input type="text" v-model="text" >
+        <h4> {{text}} </h4>
+    </div>
+
+    <br><br>
+
+    <div id="myapp3">
+        <input type="text" placeholder="First Name..." v-model="firstName">
+        <input type="text" placeholder="Last Name..." v-model="lastName">
+        <h5>Full Name : - {{fullName}} </h5>
+    </div> <br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
